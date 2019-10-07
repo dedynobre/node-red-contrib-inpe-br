@@ -24,7 +24,7 @@ module.exports = function(RED) {
 		});
 		
 		this.on('input', function(msg) {
-			msg.payload = results.conteudo;
+			msg.payload = results;
             node.send(msg);
 			
         });
