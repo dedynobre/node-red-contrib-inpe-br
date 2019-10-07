@@ -1,0 +1,151 @@
+<script type="text/javascript">
+    RED.nodes.registerType('condAeroportos',{
+        category: 'inpe BR',
+        color: '#D2691E',
+        defaults: {
+            name: {value:""},
+			estacao: {value : "SBBR"}
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"aeroportos";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="condAeroportos">
+	
+    <div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	
+    <div class="form-row">
+        <label for=""><i class="fa fa-sort"></i> Estações de Superfície Aeroportos</label>
+        <select id="node-input-estacao">
+			<option value="SBTK">Tarauacá - AC</option>
+			<option value="SBRB">Presidente Médici - AC</option>
+			<option value="SBCZ">Internacional - AC</option>
+			<option value="SBMO">Zumbi dos Palmares - AL</option>
+			<option value="SBEG">Eduardo Gomes - AM</option>
+			<option value="SBMN">Ponta Pelada - AM</option>
+			<option value="SBMY">Manicoré - AM</option>
+			<option value="SBTT">Tabatinga - AM</option>
+			<option value="SBYA">Iuaretê - AM</option>
+			<option value="SBUA">São Gabriel da Cachoeira - AM</option>
+			<option value="SBTF">Tefé - AM</option>
+			<option value="SBAM">Amapá - AP</option>
+			<option value="SBMQ">Internacional - AP</option>
+			<option value="SBOI">Oiapoque - AP</option>
+			<option value="SBLP">Bom Jesus da Lapa - BA</option>
+			<option value="SBCV">Caravelas - BA</option>
+			<option value="SBIL">Jorge Amado - BA</option>
+			<option value="SBLE">Chapada Diamantina - BA</option>
+			<option value="SBUF">Paulo Afonso - BA</option>
+			<option value="SBPS">Porto Seguro - BA</option>
+			<option value="SBSV">Dep. Luís Eduardo Magalhães - BA</option>
+			<option value="SBQV">Vitória da Conquista - BA</option>
+			<option value="SBFZ">Pinto Martins - CE</option>
+			<option value="SBJU">Cariri - CE</option>
+			<option value="SBBR">Juscelino Kubitschek - DF</option>
+			<option value="SBVT">Eurico Aguiar Salles - ES</option>
+			<option value="SBAN">Anápolis - GO</option>
+			<option value="SBGO">Santa Genoveva - GO</option>
+			<option value="SBCI">Carolina - MA</option>
+			<option value="SBIZ">Imperatriz - MA</option>
+			<option value="SBSL">Mar. Cunha Machado - MA</option>
+			<option value="SBAX">Araxá - MG</option>
+			<option value="SBPR">Carlos Prates - MG</option>
+			<option value="SBBQ">Barbacena - MG</option>
+			<option value="SBBH">Pampulha - MG</option>
+			<option value="SBCF">Tancredo Neves - MG</option>
+			<option value="SBPC">Poços de Caldas - MG</option>
+			<option value="SBUR">Uberaba - MG</option>
+			<option value="SBUL">Uberlândia - MG</option>
+			<option value="SBIP">Ipatinga - MG</option>
+			<option value="SBJF">Francisco de Assis - MG</option>
+			<option value="SBMK">Montes Claros - MG</option>
+			<option value="SBVG">Varginha - MG</option>
+			<option value="SBGV">Gov. Valadares - MG</option>
+			<option value="SBCG">Internacional - MS</option>
+			<option value="SBCR">Corumbá - MS</option>
+			<option value="SBPP">Internacional - MS</option>
+			<option value="SBAT">Alta Floresta - MT</option>
+			<option value="SBBW">Barra do Garças - MT</option>
+			<option value="SBCY">Marechal Rondon - MT</option>
+			<option value="SBHT">Altamira - PA</option>
+			<option value="SBBE">Val-de-Cans - PA</option>
+			<option value="SBIH">Itaituba - PA</option>
+			<option value="SBEK">Jacareacanga - PA</option>
+			<option value="SBMA">Marabá - PA</option>
+			<option value="SBCC">achimbó - PA</option>
+			<option value="SBTB">Trombetas - PA</option>
+			<option value="SBCJ">Carajás - PA</option>
+			<option value="SBSN">Santarém - PA</option>
+			<option value="SBTU">Tucuruí - PA</option>
+			<option value="SBAA">Conceição do Araguaia - PA</option>
+			<option value="SBKG">Pres. João Suassuna - PB</option>
+			<option value="SBJP">Pres. Castro Pinto - PB</option>
+			<option value="SBFN">Fernando de Noronha - PE</option>
+			<option value="SBRF">Guararapes - PE</option>
+			<option value="SBPL">Sen. Nilo Coelho - PE</option>
+			<option value="SBPB">Dr. João Silva Filho - PI</option>
+			<option value="SBTE">Sen. Petrônio Portella - PI</option>
+			<option value="SBLO">Londrina - PR</option>
+			<option value="SBFI">Cataratas - PR</option>
+			<option value="SBBI">Bacacheri - PR</option>
+			<option value="SBCT">Afonso Pena - PR</option>
+			<option value="SBMG">Silvio Name Junior - PR</option>
+			<option value="SBCB">Cabo Frio - RJ</option>
+			<option value="SBAF">Afonsos - RJ</option>
+			<option value="SBGL">Galeão - RJ</option>
+			<option value="SBJR">Jacarepaguá - RJ</option>
+			<option value="SBRJ">Santos Dumont - RJ</option>
+			<option value="SBSC">Santa Cruz - RJ</option>
+			<option value="SBME">Macaé - RJ</option>
+			<option value="SBES">S. Pedro da Aldeia - RJ</option>
+			<option value="SBCP">Bartolomeu Lysandro - RJ</option>
+			<option value="SBMS">Dix-Sept Rosado - RN</option>
+			<option value="SBNT">Augusto Severo - RN</option>
+			<option value="SBGM">Guajará Mirim - RO</option>
+			<option value="SBVH">Brigadeiro Camarão - RO</option>
+			<option value="SBPV">Gov. Jorge Teixeira de Oliveira - RO</option>
+			<option value="SBBV">Boa Vista - RR</option>
+			<option value="SBBG">Bagé - RS</option>
+			<option value="SBSM">Santa Maria - RS</option>
+			<option value="SBPA">Salgado Filho - RS</option>
+			<option value="SBPK">Pelotas - RS</option>
+			<option value="SBCO">Canoas - RS</option>
+			<option value="SBUG">Rubem Berta - RS</option>
+			<option value="SBCH">Chapecó - SC</option>
+			<option value="SBCM">Forquilinha - SC</option>
+			<option value="SBFL">Hercílio Luz - SC</option>
+			<option value="SBJV">Lauro Carneiro de Loyola - SC</option>
+			<option value="SBNF">Min. Victor Konder - SC</option>
+			<option value="SBAR">Santa Maria - SE</option>
+			<option value="SBAU">Araçatuba - SP</option>
+			<option value="SBBU">Bauru - SP</option>
+			<option value="SBKP">Viracopos - SP</option>
+			<option value="SBDN">Pres. Prudente - SP</option>
+			<option value="SBRP">Leite Lopes - SP</option>
+			<option value="SBSR">S. J. do Rio Preto - SP</option>
+			<option value="SBYS">Fontenelle - SP</option>
+			<option value="SBST">Base Aérea - SP</option>
+			<option value="SBGP">Gavião Peixoto - SP</option>
+			<option value="SBGW">Guaratinguetá - SP</option>
+			<option value="SBGR">Guarulhos - SP</option>
+			<option value="SBSJ">São J. dos Campos - SP</option>
+			<option value="SBMT">Campo de Marte - SP</option>
+			<option value="SBSP">Congonhas - SP</option>
+			<option value="SBTA">Taubaté - SP</option>
+			<option value="SBPJ">Palmas - TO</option>
+			<option value="SBPN">Porto Nacional - TO</option>
+        </select>
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="condAeroportos">
+    <p>Requisição dos dados de estações de superfície dos aeroportos (Metar), codificados e disponibilizados pela rede de meteorologia do comando da aeronáutica − REDEMET.</p>
+</script>

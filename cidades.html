@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('codCidades',{
+        category: 'inpe BR',
+        color: '#D2691E',
+        defaults: {
+            name: {value:""},
+			filtro: {value : ""}
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"cidades";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="codCidades">
+	
+    <div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Filtro</label>
+        <input type="text" id="node-input-filtro" placeholder="Name">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="codCidades">
+    <p>Informações de códigos, estados e cidades monitoradas pelo INPE</p>
+</script>
