@@ -1,3 +1,4 @@
+
 <script type="text/javascript">
     RED.nodes.registerType('codCidades',{
         category: 'inpe BR',
@@ -7,6 +8,7 @@
 			filtro: {value : ""}
         },
         inputs:1,
+		icon: "font-awesome/fa-map",
         outputs:1,
         label: function() {
             return this.name||"cidades";
