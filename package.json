@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "description": "Node-RED nodes para dados do clima baseado em informações do INPE",
     "dependencies": {
-        "request": "^2.87.0"
+        "request": "^2.87.0",
+        "xml2js": "^0.4.22"
     },
     "repository": {
         "type": "git",
@@ -18,7 +19,8 @@
         "nodes": {
             "cidades": "cidades.js",
             "aeroportos": "aeroportos.js",
-            "capitais": "capitais.js"
+            "capitais": "capitais.js",
+            "previsao": "previsao.js"
         }
     },
     "author": {

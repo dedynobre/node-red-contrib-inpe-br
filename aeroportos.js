@@ -1,5 +1,6 @@
 
 const request = require('request');
+const parseString = require('xml2js').parseString;
 const results = {};
 
 module.exports = function(RED) {
@@ -19,7 +20,15 @@ module.exports = function(RED) {
 			
 			results.error = (error); // Print the error if one occurred
 			results.status = (response && response.statusCode); // Print the response status code if a response was received
-			results.conteudo = ((body)); // Print the HTML for the Google homepage.
+			
+			var xml = body;
+			
+			parseString(xml, function (err, result) {
+	
+				results.conteudo = (result);
+		
+			});
+			
 			
 		});
 		
