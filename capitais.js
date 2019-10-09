@@ -8,16 +8,13 @@ module.exports = function(RED) {
         RED.nodes.createNode(this,config);
         const node = this;
 		
-		let url1 = 'http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml';
-		let url = url1;
-
-		let conteudo;
+		let url = 'http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml';
 		
 		request(url, function (error, response, body) {
 			
-			results.error = (error); // Print the error if one occurred
-			results.status = (response && response.statusCode); // Print the response status code if a response was received
-			var xml = body;
+			results.error = (error);
+			results.status = (response && response.statusCode);
+			let xml = body;
 			
 			parseString(xml, function (err, result) {
 	
@@ -26,7 +23,7 @@ module.exports = function(RED) {
 			});
 			
 		});
-		
+
 		this.on('input', function(msg) {
 			msg.payload = results;
             node.send(msg);
