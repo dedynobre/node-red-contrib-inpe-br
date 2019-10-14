@@ -23,6 +23,9 @@ A requisição dos dados de localidades do CPTEC/INPE abrange todos os municípi
 * http://servicos.cptec.inpe.br/XML/listaCidades?city=pirapora
 * http://servicos.cptec.inpe.br/XML/listaCidades?city=paracatu
 
+`Obs.: Para consulta do código via navegador, para o caso de cidade com espaço entre os nomes se faz necessário o uso (%20)
+ no lugar do espaço. Caso faça consulta diretamente pelo node esta configuração não se faz necessária.`
+ 
 ### Previsão do tempo para cidade selecionada
 
 ### Previsão do tempo para todas as capitais mais o distrito federal
