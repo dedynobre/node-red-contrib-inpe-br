@@ -30,9 +30,16 @@ seguido do filtro da cidade:
 `Obs.: Para consulta do código via navegador, para o caso de cidade com espaço entre os nomes se faz necessário o uso (%20)
  no lugar do espaço. Caso faça consulta diretamente pelo node esta configuração não se faz necessária.`
  
+ 
 ### Previsão do tempo para cidade selecionada
 
 ### Previsão do tempo para todas as capitais mais o distrito federal
+
+A requisição dos dados das condições meteorológicas atuais das capitais dos estados brasileiros retorna uma lista de informações atualizadas de hora em hora, relativas aos dados das Estações de Superfície dos Aeroportos, semelhantes à seção anterior, porém, listando apenas os dados Metar dos aeroportos localizados nas capitais.
+A URL para requisição dos dados das condições meteorológicas atuais das capitais é a seguinte:
+
+> http://servicos.cptec.inpe.br/XML/capitais/condicoesAtuais.xml
+
 
 ### Previsão do tempo nos locais com os principais aeroportos brasileiros
 
@@ -46,5 +53,6 @@ onde o **codigo_da_estacao** deve ser substituído pelo código da estação met
 > http://servicos.cptec.inpe.br/XML/estacao/SBGR/condicoesAtuais.xml
 
 Lista completa dos locais estão [aqui.](http://servicos.cptec.inpe.br/XML/#estacoes-metar)
+
 
 ### Previsão do tempo para dias futuros
