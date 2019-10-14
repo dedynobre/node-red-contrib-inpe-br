@@ -15,7 +15,7 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 
 # Detalhes
 
-## Obter código da cidade
+### Obter código da cidade
 
 ## Previsão do tempo para cidade selecionada
 
