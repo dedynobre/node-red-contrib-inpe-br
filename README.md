@@ -39,6 +39,6 @@ seguido do filtro da cidade:
 A requisição dos dados de estações de superfície dos aeroportos (Metar), codificados e disponibilizados pela rede de meteorologia do comando da aeronáutica − REDEMET − é feita através de uma URL que deve ter o código da estação fazendo parte deste endereço.
 Estes dados são coletados de uma em uma hora e ou horários intermediários (caso esteja ocorrendo algum evento especial). A URL para realizar essa requisição é tal como se segue:
 
-`http://servicos.cptec.inpe.br/XML/estacao/**codigo_da_estacao**/condicoesAtuais.xml´
+`http://servicos.cptec.inpe.br/XML/estacao/[*codigo_da_estacao*]/condicoesAtuais.xml´
 
 ### Previsão do tempo para dias futuros
