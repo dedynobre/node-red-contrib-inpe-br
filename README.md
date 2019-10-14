@@ -16,17 +16,17 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 # Detalhes
 
 
-<div id='codcidade' />
+<div id='codcidade'/>
 ## Obter código da cidade
 
-<div id='prevcidade' />
+<div id='prevcidade'/>
 ## Previsão do tempo para cidade selecionada
 
-<div id='prevcap' />
+<div id='prevcap'/>
 ## Previsão do tempo para todas as capitais mais o distrito federal
 
-<div id='prevaero' />
+<div id='prevaero'/>
 ## Previsão do tempo nos locais com os principais aeroportos brasileiros
 
-<div id='prevfuturo' />
+<div id='prevfuturo'/>
 ## Previsão do tempo para dias futuros
