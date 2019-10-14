@@ -18,6 +18,17 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 
 <div id='codcidade'/>
 ## Obter código da cidade
+lklklklklklklklklkld
+sdgsd
+gsdg
+sdg
+sdg
+sdg
+sd
+gsd
+gsd
+g
+sdgs
 
 <div id='prevcidade'/>
 ## Previsão do tempo para cidade selecionada
