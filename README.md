@@ -17,6 +17,12 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 
 ### Obter código da cidade
 
+A requisição dos dados de localidades do CPTEC/INPE abrange todos os municípios brasileiros e outros locais que têm importância econômica ou turística no qual o CPTEC/INPE cobre com previsão de tempo e outros produtos relacionados. A URL base para a requisição é a seguinte:
+
+> http://servicos.cptec.inpe.br/XML/listaCidades?city=sao paulo
+> http://servicos.cptec.inpe.br/XML/listaCidades?city=pirapora
+> http://servicos.cptec.inpe.br/XML/listaCidades?city=paracatu
+
 ### Previsão do tempo para cidade selecionada
 
 ### Previsão do tempo para todas as capitais mais o distrito federal
