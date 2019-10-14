@@ -19,7 +19,7 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 
 A requisição dos dados de localidades do CPTEC/INPE abrange todos os municípios brasileiros e outros locais que têm importância econômica ou turística no qual o CPTEC/INPE cobre com previsão de tempo e outros produtos relacionados. A URL base para a requisição é a seguinte:
 
-`http://servicos.cptec.inpe.br/XML/listaCidades`
+> http://servicos.cptec.inpe.br/XML/listaCidades
 
 seguido do filtro da cidade:
 
@@ -39,11 +39,11 @@ seguido do filtro da cidade:
 A requisição dos dados de estações de superfície dos aeroportos (Metar), codificados e disponibilizados pela rede de meteorologia do comando da aeronáutica − REDEMET − é feita através de uma URL que deve ter o código da estação fazendo parte deste endereço.
 Estes dados são coletados de uma em uma hora e ou horários intermediários (caso esteja ocorrendo algum evento especial). A URL para realizar essa requisição é tal como se segue:
 
-`http://servicos.cptec.inpe.br/XML/estacao/ **codigo_da_estacao** /condicoesAtuais.xml´
+> http://servicos.cptec.inpe.br/XML/estacao/ **codigo_da_estacao** /condicoesAtuais.xml
 
 onde o **codigo_da_estacao** deve ser substituído pelo código da estação meteorológica de superfície desejada. A lista das estações meteorológicas de superfície está disponível na seção Estações de Superfície dos Aeroportos. Abaixo segue um exemplo prático de uma requisição de dados Metar:
 
-http://servicos.cptec.inpe.br/XML/estacao/SBGR/condicoesAtuais.xml
+> http://servicos.cptec.inpe.br/XML/estacao/SBGR/condicoesAtuais.xml
 
 Lista completa dos locais estão [aqui.](http://servicos.cptec.inpe.br/XML/#estacoes-metar)
 
