@@ -17,10 +17,10 @@ Basicamente a API oficial disponibiliza as seguintes informações:
 
 ### Obter código da cidade
 
-## Previsão do tempo para cidade selecionada
+### Previsão do tempo para cidade selecionada
 
-## Previsão do tempo para todas as capitais mais o distrito federal
+### Previsão do tempo para todas as capitais mais o distrito federal
 
-## Previsão do tempo nos locais com os principais aeroportos brasileiros
+### Previsão do tempo nos locais com os principais aeroportos brasileiros
 
-## Previsão do tempo para dias futuros
+##### Previsão do tempo para dias futuros
