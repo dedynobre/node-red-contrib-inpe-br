@@ -41,4 +41,10 @@ Estes dados são coletados de uma em uma hora e ou horários intermediários (ca
 
 `http://servicos.cptec.inpe.br/XML/estacao/ **codigo_da_estacao** /condicoesAtuais.xml´
 
+onde o **codigo_da_estacao** deve ser substituído pelo código da estação meteorológica de superfície desejada. A lista das estações meteorológicas de superfície está disponível na seção Estações de Superfície dos Aeroportos. Abaixo segue um exemplo prático de uma requisição de dados Metar:
+
+http://servicos.cptec.inpe.br/XML/estacao/SBGR/condicoesAtuais.xml
+
+Lista completa dos locais estão [aqui.](http://servicos.cptec.inpe.br/XML/#estacoes-metar)
+
 ### Previsão do tempo para dias futuros
