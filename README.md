@@ -56,3 +56,28 @@ Lista completa dos locais estão [aqui.](http://servicos.cptec.inpe.br/XML/#esta
 
 
 ### Previsão do tempo para dias futuros
+
+#### 4 dias:
+Os dados da Previsão de tempo para os próximos 4 dias do CPTEC/INPE está disponível para todos os munípios brasileiros e outros locais que têm importância econômica ou turística no qual o CPTEC/INPE cobre com a previsão de tempo.
+Para realizar a requisição desses dados se faz necessário conhecer o código do município ou localidade que se deseja consultar.
+O código do município ou localidade que são cobertos pelo CPTEC/INPE é representado por um número inteiro positivo, no qual recomendamos o uso do mecanismo de Busca de localidades para o levantamento desta informação.
+Tendo posse do código da localidade é possível formar a URL para requisição dos dados, da forma que se segue:
+
+>http://servicos.cptec.inpe.br/XML/cidade/codigo_da_localidade/previsao.xml
+
+onde o codigo_da_localidade deve ser substituído pelo código do município ou localidade desejado. Como exemplo, usaremos a cidade de São Paulo/SP, que tem como código identificador o número 244. A URL da requisição ficará assim:
+
+> http://servicos.cptec.inpe.br/XML/cidade/244/previsao.xml
+
+#### 7 dias:
+Os dados da Previsão de tempo para os próximos 7 dias do CPTEC/INPE está disponível para todos os munípios brasileiros e outros locais que têm importância econômica ou turística no qual o CPTEC/INPE cobre com a previsão de tempo.
+Para realizar a requisição desses dados se faz necessário conhecer o código do município ou localidade que se deseja consultar.
+O código do município ou localidade que são cobertos pelo CPTEC/INPE é representado por um número inteiro positivo, no qual recomendamos o uso do mecanismo de Busca de localidades para o levantamento desta informação.
+Tendo posse do código da localidade é possível formar a URL para requisição dos dados, da forma que se segue:
+
+> http://servicos.cptec.inpe.br/XML/cidade/7dias/codigo_da_localidade/previsao.xml
+
+onde o codigo_da_localidade deve ser substituído pelo código do município ou localidade desejado. Como exemplo, usaremos a cidade de São Paulo/SP, que tem como código identificador o número 244. A URL da requisição ficará assim:
+
+> http://servicos.cptec.inpe.br/XML/cidade/7dias/244/previsao.xml
+
